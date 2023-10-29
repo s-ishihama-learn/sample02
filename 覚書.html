@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>覚書</title>
+  <style>
+    .tab-002 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 10px;
+        max-width: 1200px;
+    }
+
+    .tab-002 > label {
+        flex: 1 1;
+        order: -1;
+        opacity: .5;
+        min-width: 70px;
+        max-width: 140px;
+        padding: .6em 1em;
+        border-radius: 5px 5px 0 0;
+        background-color: #2589d0;
+        color: #fff;
+        font-size: .9em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tab-002 > label:hover {
+        opacity: .8;
+    }
+
+    .tab-002 input {
+        display: none;
+    }
+
+    .tab-002 > div {
+        display: none;
+        width: 100%;
+        padding: 1.5em 1em;
+        background-color: #fff;
+    }
+
+    .tab-002 label:has(:checked) {
+        opacity: 1;
+    }
+
+    .tab-002 label:has(:checked) + div {
+        display: block;
+    }
+  </style>
+</head>
+
+<body>
+<div class="tab-002">
+    <label>
+        <input type="radio" name="tab-002" checked>
+        タブ1
+    </label>
+    <div>
+      <div>
+        背景が単色のシンプルなタブです。
+        タブの文言がはっきり見えるだけでなく、色を変えることでどんなサイトにも馴染みやすいのが特徴です。
+      </div>
+      <div>XXX</div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+
+    <label>
+        <input type="radio" name="tab-002">
+        Git
+    </label>
+    <div>
+      <div>Gitの使い方に関するリンクです。</div>
+      <div><a href="https://mizukazu.com/【git】作業ブランチに最新のmasterを反映させる方法！/" target="_blank">【Git】作業ブランチに最新のmasterを反映させる方法！</a></div>
+      <div><a href="" target="_blank"></a></div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+
+    <label>
+        <input type="radio" name="tab-002">
+        クラウド
+    </label>
+    <div>
+      <div><a href="https://qiita.com/Brutus/items/6c8d9bfaab7af53d154a" target="_blank">5分で理解するAWS CDK</a></div>
+      <div><a href="" target="_blank"></a></div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+
+    <label>
+        <input type="radio" name="tab-002">
+        Node.js
+    </label>
+    <div>
+      <div><a href="https://qiita.com/_shimizu/items/78021c30914767c55bd7" target="_blank">node.jsでポートフォワーディング</a></div>
+      <div><a href="https://goodpatch-tech.hatenablog.com/entry/next-themes-tailwind" target="_blank">Next.js で next-themes と Tailwind CSS を使って Light/Dark モードを切り替える</a></div>
+      <div><a href="https://tutorials.tinkink.net/ja/nginx/nginx-reverse-proxy-nodejs.html" target="_blank">Node.jsリバースプロキシのNginx設定</a></div>
+      <div><a href="https://zenn.dev/kisukeyas/articles/e0963675baa549" target="_blank">Stripe APIを使って簡単に決済をやってみた(Node.js Express)</a></div>
+      <div><a href="https://zenn.dev/www_y/articles/58d6bb1da8a723" target="_blank">オレオレ Next.js 初期設定</a></div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+
+    <label>
+        <input type="radio" name="tab-002">
+        メトリクス
+    </label>
+    <div>
+      <div><a href="https://atmarkit.itmedia.co.jp/ait/articles/0606/10/news016.html" target="_blank">Eclipseで使えるメトリクス計測ツール</a></div>
+      <div><a href="" target="_blank"></a></div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+
+    <label>
+        <input type="radio" name="tab-002">
+        Maven/Spring Boot
+    </label>
+    <div>
+      <div><a href="https://qiita.com/rubytomato@github/items/118817023845b4284553" target="_blank">Spring Bootアプリケーションをmavenのmulti moduleで構成する</a></div>
+      <div><a href="https://dev.classmethod.jp/articles/try-sqllineage/" target="_blank">Pythonで利用できるSQLのリネージュ分析ツール「SQLLineage」を試してみた</a></div>
+      <div><a href="https://qiita.com/TaikiTkwkbysh/items/5553a8625ff95314a392" target="_blank">【初心者向け】pom.xml基礎知識</a></div>
+      <div><a href="https://future-architect.github.io/articles/20220729a/" target="_blank">SpringBootで動的な条件をもとにDIしたい</a></div>
+      <div><a href="https://ja.stackoverflow.com/questions/73288/java-spring-boot-インターフェースをnewしないで使う記法が理解できない" target="_blank">Java（spring boot） インターフェースをnewしないで使う記法が理解できない</a></div>
+      <div><a href="https://qiita.com/gagagaga_dev/items/c16e5b6b3dff6df7e406" target="_blank">【Spring】複数のBeanをAutowiredする。（おまけ付き）</a></div>
+      <div><a href="https://dev.classmethod.jp/articles/spring-boot-config-yaml/" target="_blank">Spring Bootで定義ファイル(yaml)を参照する</a></div>
+      <div><a href="https://qiita.com/rubytomato@github/items/118817023845b4284553" target="_blank">Spring Bootアプリケーションをmavenのmulti moduleで構成する</a></div>
+      <div><a href="" target="_blank"></a></div>
+    </div>
+</div>
+</body>
+</html>
