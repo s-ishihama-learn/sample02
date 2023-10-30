@@ -1,0 +1,21 @@
+git checkout -b test/dev01 fuature
+git push -u origin test/dev01
+
+C:\Users\ishihama>cat .gitconfig
+[user]
+        name = user0046
+        email = shigeru.ishihama@emtech-academy.com
+
+git config --global user.name "aioffshore"
+git config --global user.email "shigeru-ishihama@ai-offshore.com"
+
+aioffshore-s-ishihama
+shigeru-ishihama@ai-offshore.com
+
+
+git config --local user.name
+git config --local user.email
+git config --global user.name
+git config --global user.email
+git config --system user.name
+git config --system user.email
